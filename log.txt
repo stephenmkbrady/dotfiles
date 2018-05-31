@@ -1,0 +1,8 @@
+cp -r ~/.config/ranger common/.config/
+cp -r ~/.config/rofi common/.config/
+cp ~/.vimrc common/
+cp -r ~/.ncmpcpp/ common/
+cp -r ~/.config/mpd common/.config
+cp -r ~/.config/polybar i3wm/
+cp -r ~/.i3 i3wm/
+cp ~/.bashrc common
