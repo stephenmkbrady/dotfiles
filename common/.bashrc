@@ -37,11 +37,12 @@ wal-tile() {
 }
 enable-hdmi(){
     xrandr --auto --output HDMI2 --mode 1920x1080 --left-of eDP1
-    nitrogen --restore
+    feh --bg-tile "$(< "${HOME}/.cache/wal/wal")"
+
 }
 disable-hdmi(){
     xrandr --output HDMI2 --off
-    nitrogen --restore
+    feh --bg-tile "$(< "${HOME}/.cache/wal/wal")"
 
 }
 
@@ -64,6 +65,12 @@ vol-up(){
 }
 vol-down(){
     ponymix -d combined decrease "$@"
+}
+vol-mute(){
+    ponymix -d combined mute
+}
+vol-unmute(){
+    ponymix -d combined unmute
 }
 [[ -f ~/.extend.bashrc ]] && . ~/.extend.bashrc
 

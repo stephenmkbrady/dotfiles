@@ -1,6 +1,6 @@
 #!/bin/sh
 
-KEYBOARD_ID="11" 
+KEYBOARD_ID="16"
 # To get keyboard id: # xinput list --short
 
 
